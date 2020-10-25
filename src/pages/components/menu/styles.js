@@ -3,13 +3,13 @@ import {Button,Navbar,Nav} from 'react-bootstrap';
 
 export const Spantext = Styled.span`
  font-style: normal;
- font-size: 14px;
+ font-size: 16px;
  color:white!important;
  font-weight:bold;
  transition:0.2s;
  &:hover {
   transition:0.2s;
-  border-bottom:solid 3px #00ff86;
+  border-bottom:solid 3px #00aa96;
 }
 `;
 
@@ -18,15 +18,17 @@ border-radius:0;
 font-size:18px;
 color:white;
 border:none;
-background-color:#4B9E50;
+background-color:#00aa96;
 margin:0;
 padding: 5px 30px;
-&:hover {
-    color:white;
-    border:solid #white;
-    background-color:#4B9E50;
-}
-  
+transition:0.4s;
+  &:hover {
+      color:white;
+      border:none;
+      background-color:#00bb96;
+      transform:scale(1.2);
+      transition:0.4s;
+  }
 `;
 export const NavT = Styled(Nav)`
   margin:0;
@@ -36,6 +38,6 @@ export const NavT = Styled(Nav)`
 export const Navp = Styled(Navbar)`
   width:100%;
   margin:0;
-  background-color:rgba(11,11,11, 0.2);
+  background-color: rgba(0,0,0, 0.4);
 `;
 

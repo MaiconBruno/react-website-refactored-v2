@@ -7,7 +7,7 @@ import LogoSVG from '../../../assets/images/svg/logo'
 export default function Heade() {
     return (
         <Navp expand="lg">
-            <Navbar.Brand href="#inicio"><LogoSVG sizeWidth={'250px'} sizeHeight={'80'}/></Navbar.Brand>
+            <Navbar.Brand href="#inicio"><LogoSVG sizeWidth={'300px'} sizeHeight={'80'}/></Navbar.Brand>
             <Navbar.Toggle  style={{backgroundColor:'white',}} aria-controls="basic-navbar-nav" />
             <Navp.Collapse id="basic-navbar-nav">
             <NavT className="mr-auto col-md-9 justify-content-end align-items-center">
