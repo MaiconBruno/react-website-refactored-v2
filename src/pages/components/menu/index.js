@@ -6,18 +6,16 @@ import LogoSVG from '../../../assets/images/svg/logo'
 
 export default function Heade() {
     return (
-        <Navp expand="lg">
+        <Navp className="col-md-12 col-12 d-flex justify-content-center align-items-center" expand="lg">
             <Navbar.Brand href="#inicio"><LogoSVG sizeWidth={'300px'} sizeHeight={'80'}/></Navbar.Brand>
-            <Navbar.Toggle  style={{backgroundColor:'white',}} aria-controls="basic-navbar-nav" />
+            <Navbar.Toggle style={{backgroundColor:'white',}} aria-controls="basic-navbar-nav" />
             <Navp.Collapse id="basic-navbar-nav">
-            <NavT className="mr-auto col-md-9 justify-content-end align-items-center">
+            <NavT className="m-0 col-md-12 justify-content-end align-items-center">
                     <Nav.Link  href="#inicio"><Spantext>Inicio</Spantext></Nav.Link>
                     <Nav.Link  href="#servico"><Spantext>Serviços</Spantext></Nav.Link>
                     <Nav.Link  href="#projetos"><Spantext>Projetos</Spantext></Nav.Link>
                     <Nav.Link  href="#blog"><Spantext>Blog</Spantext></Nav.Link>
-             </NavT>
-             <NavT className="mr-auto col-md-2  justify-content-end align-items-center">
-                    <Menubutton variant="outline-light"  href="#contato">Contato</Menubutton>
+                    <Menubutton className="m-4" variant="outline-light"  href="#contato">Contato</Menubutton>
              </NavT>
             </Navp.Collapse>
         </Navp>
