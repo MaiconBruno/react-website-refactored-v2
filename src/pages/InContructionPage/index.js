@@ -4,7 +4,7 @@ import {
   P,
 } from "./styles";
 
-export default function Home() {
+export default function NotFund() {
   return (
     <>
       <RowMain>

@@ -1,30 +1,31 @@
 import {Row,Col,Container} from 'react-bootstrap';
 import Styled from 'styled-components';
 
-export const TitleServicoh1 = Styled.h2`
+export const TitleSection = Styled.h2`
   font-weight:900;
-  color:white;
-  font-size:45px;
+  width:100%;
+  color:#00aa96;
+  font-size:25px;
   text-align:center;
-  margin:10px;
+  padding:50px 20px;
+  border-top:solid 10px #00aa96;
 `;
 
-export const TitleServicoh2 = Styled.h3`
+export const TitleCard = Styled.h3`
   font-weight:bold;
-  color:white;
+  color:#535353;
   font-size:20px;
   text-align:center;
   margin:10px;
 `;
-export const ConteudoTextServico = Styled.p`
+export const ContentCard = Styled.p`
   font-weight:400;
-  color:white;
+  color:#535353;
   font-size:15px;
   text-align:center;
-  margin:10px;
 `;
 
-export const ImgServico = Styled.img`
+export const IcoService = Styled.img`
   padding-bottom:10px;
   transition:0.8s; 
   &:hover {
@@ -40,28 +41,25 @@ export const ImgServico = Styled.img`
 }
 `;
 
-export const ServicosRow = Styled(Row)`
+export const RowSection = Styled(Row)`
 
- border-top: solid 10px #00ff86;
-  border-bottom: solid 10px #00ff86;
-  background-color:#1d1d1d;
+  background-color:#f3f3f3;
   display:flex;
   flex-direction:column; 
   margin:0!important;
   align-items:center;
   justify-content:center;
-  padding:20px;
-
+  padding:0!important;
 `;
 
-export const ServicosCon =  Styled(Container)`
+export const ContainCard =  Styled(Container)`
    display:flex;
    justify-content:center;
    align-items:center;
    margin-top:50px;
 `;
 
-export const ServicosCol =  Styled(Col)`
+export const ColCard =  Styled(Col)`
    display:flex;
    flex-direction:column;
    justify-content:center;
