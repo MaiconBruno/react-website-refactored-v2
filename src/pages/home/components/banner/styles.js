@@ -5,13 +5,9 @@ import GithubSVG from '../../../../assets/icons/svg/github';
 import LinkedinSVG from '../../../../assets/icons/svg/linkedin';
 import response from '../../../../util/px2vw';
 
-export const MainSection = styled.div`
- /* background-image: url(${img_banner});
+export const MainSection = styled.div` 
  margin:0;
- background-repeat: no-repeat;
- background-position: center;
- background-size: cover;
- border-bottom:5px solid #00ff86; */
+ border-bottom:5px solid #00ff86; 
 `
 
 export const Contain = styled(Container)`
