@@ -20,7 +20,7 @@ export default function Services() {
 
     //Array Services 
     const [servicos, setServicos] = useState([
-        { ico: <IcoSVG sizeWidth={'50px'} sizeHeight={'50px'} /> , title: "Criação de Sites", content: "Desenvolvedor de Sites em HTML, CSS, JavaScript, PHP, MySql. React.js, Wordpress." },
+        { ico: Ico1 , title: "Criação de Sites", content: "Desenvolvedor de Sites em HTML, CSS, JavaScript, PHP, MySql. React.js, Wordpress." },
         { ico: Ico2, title: "Desenvolvimento de aplicativos", content: "Desenvolvimento de Aplicativos para Celulares Android e iOS (iPhone)." },
         { ico: Ico3, title: "Blog", content: "Desenvolvimento de blog e plataformas de gerenciamento de conteudo." },
         { ico: Ico4, title: "Manutenção Web", content: "Criação de layouts responsivos e interativos com usuario." },
@@ -30,12 +30,11 @@ export default function Services() {
 
     return (
         <RowSection id="servico">
-            <TitleSection>SERVIÇOS</TitleSection>
-            
+            <TitleSection>SERVIÇOS</TitleSection>      
             <ContainCard className="col-md-12 col-sm-12 col-12 row">
                 {servicos.map(data => (
                     <ColCard className="col-md-3 col-sm-12 col-12 ">
-                        {data.ico}
+                        <img src={data.ico} alt=""/>
                         <TitleCard>{data.title}</TitleCard>
                         <ContentCard>
                             {data.content}

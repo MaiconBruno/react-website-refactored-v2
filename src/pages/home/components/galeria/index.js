@@ -1,9 +1,6 @@
-import './toolsFilter';
 import React from 'react';
 import Card from './toolsCard';
-import { GaleriaRow, GaleriaCon, TitleGaleri,CardFilter, Filter,TextCard,TitleCard,CardGaleriCor } from './styled_galeria';
-
-
+import { GaleriaRow, GaleriaCon, TitleGaleri, CardFilter, Filter, TextCard, TitleCard, CardGaleriCor } from './styles';
 
 function Galeria() {
     return (
@@ -11,7 +8,7 @@ function Galeria() {
             <GaleriaRow id="projetos">
                 <TitleGaleri>Projetos</TitleGaleri>
                 <CardFilter>
-                    <Filter style={{color:'#00ff86'}} id="All"><i style={{margin:10}} class="fas fa-code"></i>TODOS</Filter>
+                    <Filter style={{color:'#00aa96'}} id="All"><i style={{margin:10}} class="fas fa-code"></i>TODOS</Filter>
                     <Filter id="Desk"><i style={{margin:10}} class="fas fa-globe"></i> WEB</Filter>
                     <Filter id="Mobi"><i style={{margin:10}}  class="fas fa-mobile-alt"></i> MOBILE</Filter>
                 </CardFilter>

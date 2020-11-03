@@ -2,15 +2,15 @@ import { Row, Card, Col } from 'react-bootstrap';
 import Styled from 'styled-components';
 
 export const TitleGaleri = Styled.h2`
-color:white;
+color:#535353;
 font-weight:bold;
 font-size:45px;
 margin-bottom:40px;
 `;
 
 export const GaleriaRow = Styled(Row)`
-  background-color:#1d1d1d;
-  border-bottom:solid 10px #00ff86;
+  background-color:#f3f3f3;
+  border-bottom:solid 10px #00aa96;
   margin:0!important;
   padding:50px;
   display:flex;
@@ -63,13 +63,12 @@ border:none;
 margin-left:20px;
 margin-right:20px;
 text-decoration:none!important;
-color:white;
+color:#535353;
 font-size:20px;
-background-color:#1d1d1d;
 &:hover{
    transition:0.8s;
- color:#00ff86;
- transform:scale(1.2);
+   color:#00aa96;
+   transform:scale(1.2);
 }
 `;
 

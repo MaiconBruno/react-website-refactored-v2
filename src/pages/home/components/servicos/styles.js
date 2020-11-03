@@ -67,18 +67,14 @@ export const ColCard = Styled(Col)`
    transition:0.5s;
    &:hover  {
      transition:0.5s;
-     background-color:#00aa96;
+     -webkit-box-shadow: 0px 0px 11px 0px rgba(64, 50, 50, 0.52);
+-moz-box-shadow:    0px 0px 11px 0px rgba(64, 50, 50, 0.52);
+box-shadow:         0px 0px 11px 0px rgba(64, 50, 50, 0.52);
      cursor:pointer;
    }
    &:hover ${IcoService} {  
       animation: treme 0.9s;
       animation-iteration-count: 1;
-  }
-  &:hover ${TitleCard} {
-    color:white;
-  }
-  &:hover ${ContentCard} {
-    color:white;
   }
 }
 `;

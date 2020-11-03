@@ -1,30 +1,26 @@
 import React, { useState, useEffect } from 'react';
-import axios from 'axios';
-import { CardGaleriCor, TitleCard, TextCard } from './styled_galeria';
-import CardBackground from '../../img/Banner.png';
-import api from '../../services/api';
-var url = "http://localhost:3333";
+import { CardGaleriCor, TitleCard, TextCard } from './styles';
+
+import ImageProjetExemple from '../../../../assets/images/svg/BannerFundoForm.png'
 
 function Card() {
-    const [projects, setProjects] = useState([]);
+    const [projects, setProjects] = useState([
+        {   
+            projectType:'web',
+            projectName:'Title',
+            projectDesc:'Projeto projetado para projesão de algo',
+            ProjectImg: ImageProjetExemple,
+        }
+    ]);
 
-    useEffect(() => {
-        async function loadProjects() {
-            const answer = await api.get('/project/getall');
-            setProjects(answer.data);
-        };
-
-        loadProjects();
-    }, [])
 
     return (
         <>
             {projects.map(project => (
-                <CardGaleriCor name={project.group}
-                    style={{backgroundImage: `url(${project.File.url})` }}
-                >
-                    <TitleCard>{project.title}</TitleCard>
-                    <TextCard>{project.description}</TextCard>
+                <CardGaleriCor name={project.projectType}
+                    style={{backgroundImage: `url(${project.ProjectImg})`}}>
+                    <TitleCard>{project.projectName}</TitleCard>
+                    <TextCard>{project.projectDesc}</TextCard>
                 </CardGaleriCor>
             ))}
         </>

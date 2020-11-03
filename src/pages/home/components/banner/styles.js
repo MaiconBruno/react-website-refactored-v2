@@ -1,13 +1,17 @@
 import styled from 'styled-components';
 import { Row, Col, Container } from 'react-bootstrap';
-// import img_banner from '../../../../assets/images/svg/bg_image.svg';
+import img_banner from '../../../../assets/images/svg/bg_image.svg';
 import GithubSVG from '../../../../assets/icons/svg/github';
 import LinkedinSVG from '../../../../assets/icons/svg/linkedin';
 import response from '../../../../util/px2vw';
 
-export const MainSection = styled.div` 
+export const MainSection = styled.div`
+ background-image: url(${img_banner});
  margin:0;
- border-bottom:5px solid #00ff86; 
+ background-repeat: no-repeat;
+ background-position: center;
+ background-size: cover;
+ border-bottom:5px solid #00ff86;
 `
 
 export const Contain = styled(Container)`
