@@ -22,9 +22,7 @@ export default function Banner() {
             <Title>
               Desenvolvedor <span style={{ color: '#00aa96'}}>WEB</span>
             </Title>
-            <SubTitle><span style={{ color: '#00aa96' }}>+</span> Criação de sites</SubTitle>
-            <SubTitle><span style={{ color: '#00aa96' }}>+</span> Aplicações web</SubTitle>
-            <SubTitle><span style={{ color: '#00aa96' }}>+</span> Aplicações mobile</SubTitle>
+            <SubTitle>Soluções para seu negócio com as principais tecnologias do mercado.</SubTitle>
           </Column>
           <Column className="col-md-4 col-sm-12 col-12 ">
             <RowContain>

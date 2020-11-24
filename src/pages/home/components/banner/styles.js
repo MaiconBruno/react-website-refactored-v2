@@ -11,7 +11,6 @@ export const MainSection = styled.div`
  background-repeat: no-repeat;
  background-position: center;
  background-size: cover;
- border-bottom:5px solid #00ff86;
 `
 
 export const Contain = styled(Container)`
@@ -57,7 +56,7 @@ font-weight:bold;
     }
     @media (max-width:1023px) { 
           font-size: ${response(120)} ;    
-          padding-top:30px;      
+          padding-top:10px;      
     }
     @media (max-width: 600px) { 
           font-size: ${response(150)} ;  
@@ -66,9 +65,8 @@ font-weight:bold;
 
 `
 export const SubTitle = styled.h2`
-  color: white;
-  font-weight: 400;
-  margin-top:3px;
+  color:white;
+  font-weight:400;
   @media (min-width: 1024px) { 
     font-size: ${response(30)} ; 
     padding-left:100px;

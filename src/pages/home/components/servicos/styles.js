@@ -47,6 +47,7 @@ export const RowSection = Styled(Row)`
   align-items:center;
   justify-content:center;
   padding:0!important;
+  border-top:5px solid #00aa96;
 `;
 
 export const ContainCard = Styled(Container)`
@@ -61,19 +62,16 @@ export const ColCard = Styled(Col)`
    flex-direction:column;
    justify-content:center;
    align-items:center;
-   margin:30px;
+   margin:20px;
    padding:20px;
-   border-radius:10px 50px 10px 50px;
-   transition:0.5s;
+   transition:0.2s;
+   border-bottom:3px #f3f3f3 solid;
    &:hover  {
-     transition:0.5s;
-     -webkit-box-shadow: 0px 0px 11px 0px rgba(64, 50, 50, 0.52);
--moz-box-shadow:    0px 0px 11px 0px rgba(64, 50, 50, 0.52);
-box-shadow:         0px 0px 11px 0px rgba(64, 50, 50, 0.52);
+     border-bottom:3px #00aa96 solid;
      cursor:pointer;
    }
-   &:hover ${IcoService} {  
-      animation: treme 0.9s;
+   &:hover ${TitleCard} {  
+      animation: treme 0.2s;
       animation-iteration-count: 1;
   }
 }

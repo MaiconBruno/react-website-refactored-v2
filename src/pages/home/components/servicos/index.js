@@ -29,8 +29,7 @@ export default function Services() {
     ]);
 
     return (
-        <RowSection id="servico">
-            <TitleSection>SERVIÇOS</TitleSection>      
+        <RowSection id="servico"> 
             <ContainCard className="col-md-12 col-sm-12 col-12 row">
                 {servicos.map(data => (
                     <ColCard className="col-md-3 col-sm-12 col-12 ">
